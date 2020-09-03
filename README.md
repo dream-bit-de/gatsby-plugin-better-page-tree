@@ -16,12 +16,14 @@
 **This plugin will make the page tree provided by gatsby graphql more intuitive.**
 
 This plugin was created to overcome some issues with child and parent relations in gatsbyjs.
-It will generate the relations like this: `/src/pages/subpages`,
+
+The initial question on Stackoverflow was this one: [How do you figure out parent and child relations between pages in gatsbyjs?](https://stackoverflow.com/questions/63674700/how-do-you-figure-out-parent-and-child-relations-between-pages-in-gatsbyjs). After taking this directly to the [gatsby community](https://github.com/gatsbyjs/gatsby/issues/26752), the need for a plugin was clear.
+
+ gatsby-plugin-better-page-tree will generate the relations like this: `/src/pages/subpages`,
 
 ```
-/src/pages/page-01.js
-/src/pages/page-02/index.js
-/src/pages/page-02/child-page-of-02
+/src/pages/parentpage/index.js
+/src/pages/parentpage/subpage/index.js
 ```
 
 will now give you:
