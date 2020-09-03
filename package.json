@@ -1,5 +1,5 @@
 {
-  "name": "@dream-bit/gatsby-plugin-better-page-tree",
+  "name": "@dream-bit-de/gatsby-plugin-better-page-tree",
   "version": "1.0.0",
   "description": "This plugin will make the page tree provided by gatsby graphql more intuitive.",
   "main": "main.js",
