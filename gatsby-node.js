@@ -1,4 +1,4 @@
-
+const { v4: uuidv4 } = require('uuid');
 
 // This map will hold the information about,
 // the page ids and the relations between them.
