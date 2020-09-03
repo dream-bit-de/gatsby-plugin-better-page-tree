@@ -1,12 +1,14 @@
 {
-  "name": "@dream-bit-de/gatsby-plugin-better-page-tree",
+  "name": "gatsby-plugin-better-page-tree",
   "version": "1.0.0",
   "description": "This plugin will make the page tree provided by gatsby graphql more intuitive.",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dream-bit-de/gatsby-plugin-better-page-tree.git"
@@ -26,6 +28,9 @@
   ],
   "author": "Güney Jung aka. Megajin",
   "license": "MIT",
+  "dependencies": {
+    "uuid": "^8.3.0"
+  },
   "bugs": {
     "url": "https://github.com/dream-bit-de/gatsby-plugin-better-page-tree/issues"
   },

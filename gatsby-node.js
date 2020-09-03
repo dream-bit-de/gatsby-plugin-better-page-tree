@@ -1,3 +1,5 @@
+
+
 // This map will hold the information about,
 // the page ids and the relations between them.
 const PageTreeMap = {};
@@ -43,7 +45,7 @@ function normalizePathToPageName(str) {
  * @param  {Object} actions               @see https://www.gatsbyjs.com/docs/node-apis/#onCreateNode
  * @param  {Function} createContentDigest @see https://www.gatsbyjs.com/docs/node-apis/#sourceNodes
  */
-async function createPageTree({ node, actions, createContentDigest }) {
+async function createPageTree({ node, actions, createContentDigest, reporter }) {
   // only proceed if is SitePage
   if (node.internal.type !== 'SitePage') return;
 
