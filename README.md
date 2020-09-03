@@ -13,9 +13,7 @@
   </a>
 </p>
 
-**This plugin will make the page tree provided by gatsby graphql more intuitive.**
-
-This plugin was created to overcome some issues with child and parent relations in gatsbyjs.
+**This plugin will make the page tree provided by gatsby graphql more intuitive. It was created to overcome some issues with child and parent relations in gatsbyjs.**
 
 The initial question on Stackoverflow was this one: [How do you figure out parent and child relations between pages in gatsbyjs?](https://stackoverflow.com/questions/63674700/how-do-you-figure-out-parent-and-child-relations-between-pages-in-gatsbyjs). After taking this directly to the [gatsby community](https://github.com/gatsbyjs/gatsby/issues/26752), the need for a plugin was clear.
 
