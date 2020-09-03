@@ -11,6 +11,9 @@
     "url": "git+https://github.com/dream-bit-de/gatsby-plugin-better-page-tree.git"
   },
   "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-plugin-better-page-tree",
     "sitepage",
     "site",
     "page",
