@@ -69,7 +69,7 @@ module.exports = {
   },
   plugins: [
     // ... other plugins
-    `gatsby-plugin-better-page-tree`
+    `@dream-bit-de/gatsby-plugin-better-page-tree`
   ]
 };
 ```
