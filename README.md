@@ -87,13 +87,24 @@ import { Link, useStaticQuery, graphql } from 'gatsby';
 function Sidebar() {
   const Pages = useStaticQuery(graphql`
     query {
-      allSitePage(filter: { id: { nin: ["SitePage /", "SitePage /dev-404-page/", "SitePage /404/", "SitePage /404.html"] } }) {
-        nodes {
-          id
-          children {
+      allPageTree {
+        edges {
+          node {
             id
+            name
+            pathRaw
+            pathNoTrail
+            isRootPage
+            children {
+              id
+              ... on PageTree {
+                id
+                name
+                pathRaw
+                pathNoTrail
+              }
+            }
           }
-          path
         }
       }
     }
