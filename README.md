@@ -100,17 +100,17 @@ function Sidebar() {
   `);
   const { nodes } = Pages.allSitePage;
 
-  return (
-		{nodes.map((n) => (
-			<ul key={`sidebar-${n.id}`}>
-				<li button className={classes.listItem} component="div">
-					<Link className={classes.listLinks} to={n.path}>
-						<span>{Helpers.normalizePathToPagename(n.path)}</span>
-					</Link>
-				</li>
-			</ul>
-		))}
-  );
+return (
+     {nodes.map((n) => (
+     <ul key={`sidebar-${n.id}`}>
+      <li button className={classes.listItem} component="div">
+       <Link className={classes.listLinks} to={n.path}>
+        <span>{Helpers.normalizePathToPagename(n.path)}</span>
+       </Link>
+      </li>
+     </ul>
+     ))}
+);
 
 ```
 
