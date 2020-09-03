@@ -56,7 +56,7 @@ will now give you:
 
 ## :mortar_board: Install
 
-Just use `npm install gatsby-plugin-better-page-tree` or `yarn install gatsby-plugin-better-page-tree`, it's your choice.
+Just use `npm install @dream-bit-de/gatsby-plugin-better-page-tree` or `yarn install @dream-bit-de/gatsby-plugin-better-page-tree`, it's your choice.
 After that you have to modify your `gatsby-config.js`:
 
 ```javascript
