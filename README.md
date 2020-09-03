@@ -114,9 +114,21 @@ function Sidebar() {
 return (
      {nodes.map((n) => (
      <ul key={`sidebar-${n.id}`}>
-      <li button className={classes.listItem} component="div">
-       <Link className={classes.listLinks} to={n.path}>
-        <span>{Helpers.normalizePathToPagename(n.path)}</span>
+      <li>
+       <Link to={n.pathRaw}>
+        <span>{n.name}</span>
+        {
+         n.children && n.children.length > 0 ? (
+         {nodes.map((n) => (
+          <ul key={`sidebar-${n.id}`}>
+            <li>
+              <Link to={n.pathRaw}>
+                <span>{n.name}</span> 
+              </Link>
+            </li>
+          </ul>
+         ) : null
+        }
        </Link>
       </li>
      </ul>
@@ -127,6 +139,7 @@ return (
 
 That's it!
 
+**Be aware that the query will give you all pages in the first place! You have to make sure that no duplicates will show up in your sidebar, if that is what you need.**
 
 ## :collision: Configuration
 
