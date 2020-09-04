@@ -1,14 +1,14 @@
 {
   "name": "@dream-bit-de/gatsby-plugin-better-page-tree",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "This plugin will make the page tree provided by gatsby graphql more intuitive.",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
   "publishConfig": {
-  "registry": "https://registry.npmjs.org",
-  "access": "public"
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
   "repository": {
     "type": "git",
