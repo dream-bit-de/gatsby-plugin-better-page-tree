@@ -11,6 +11,9 @@
   <a href="http://makeapullrequest.com">  
       <img alt="Gatsby" src="https://img.shields.io/badge/PRs-welcome-brightgreen" />
   </a>
+  <a href="https://github.com/dream-bit-de/gatsby-plugin-better-page-tree/workflows/Node.js%20CI/badge.svg?branch=master">
+    <img alt="CI Status" src="https://github.com/dream-bit-de/gatsby-plugin-better-page-tree/workflows/Node.js%20CI/badge.svg?branch=master" />
+  </a>
 </p>
 
 **This plugin will make the page tree provided by gatsby graphql more intuitive. It was created to overcome some issues with child and parent relations in gatsbyjs.**
