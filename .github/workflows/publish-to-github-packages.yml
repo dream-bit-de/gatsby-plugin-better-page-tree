@@ -14,9 +14,7 @@ jobs:
           registry-url: https://npm.pkg.github.com/
 
       - name: install packages
-        run: npm install
-      - name: start tests
-        run: npm test
+        run: npm ci
       - name: start publishing
         run: npm publish
         env: 
