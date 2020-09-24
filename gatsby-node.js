@@ -22,35 +22,35 @@ async function createPageTree({ node, actions, createContentDigest }) {
   // get relevant node informations.
   const { id, path } = node;
 
+
   // put new data together
   const pageTreeId = path !== '/' ? transformPageID(id) : transformPageID('SitePage /homepage/');
   const pathRaw = path;
-  const pathNoTrail = path !== '/' ? path.slice(0, -1) : path;
+  const pathNoSlashBegining = path.replace(/\//, '');
   const name = path !== '/' ? normalizePathToPageName(path) : 'Homepage';
 
-  const pageNesting = pathNoTrail.slice(1).split('/');
+  const pageNesting = pathNoSlashBegining === '/' || pathNoSlashBegining === '' ? ['homepage'] : pathNoSlashBegining.split('/').filter(f => f !== '');
   const isRootPage = pageNesting.length === 1;
+  const currentPage = pageNesting[pageNesting.length - 1];
+  const parentPage = pageNesting[0];
 
   const pageTreeNode = {
     id: pageTreeId,
     isRootPage,
     name,
     pathRaw,
-    pathNoTrail,
     internal: { type: 'PageTree' }
   };
   pageTreeNode.internal.contentDigest = createContentDigest(pageTreeNode);
-
   if (isRootPage) {
-    PageTreeMap[pageNesting[0]] = pageTreeNode;
+    PageTreeMap[currentPage === '' ? 'home' : currentPage] = pageTreeNode;
   } else {
     createParentChildLink({
-      parent: PageTreeMap[pageNesting[0]],
+      parent: PageTreeMap[parentPage === '' ? 'home' : parentPage],
       child: pageTreeNode
     });
-    PageTreeMap[pageNesting[pageNesting.length - 1]] = pageTreeNode;
+    PageTreeMap[currentPage] = pageTreeNode;
   }
-
   createNode(pageTreeNode);
 }
 
