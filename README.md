@@ -59,8 +59,6 @@ will now give you:
 
 ## :mortar_board: Install
 
-optional: Add a new npm scope: `npm config set @dream-bit-de:registry=https://npm.pkg.github.com`
-
 Just use `npm install @dream-bit-de/gatsby-plugin-better-page-tree` or `yarn install @dream-bit-de/gatsby-plugin-better-page-tree`, it's your choice.
 After that you have to modify your `gatsby-config.js`:
 
