@@ -4,7 +4,7 @@
   "description": "This plugin will make the page tree provided by gatsby graphql more intuitive.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "npx jest"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
