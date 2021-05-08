@@ -1,6 +1,6 @@
 {
   "name": "@dream-bit-de/gatsby-plugin-better-page-tree",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "description": "This plugin will make the page tree provided by gatsby graphql more intuitive.",
   "main": "index.js",
   "scripts": {
@@ -40,8 +40,8 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.0",
-    "prettier": "2.1.0",
-    "jest": "^26.4.2"
+    "jest": "^26.4.2",
+    "prettier": "2.1.0"
   },
   "bugs": {
     "url": "https://github.com/dream-bit-de/gatsby-plugin-better-page-tree/issues"
